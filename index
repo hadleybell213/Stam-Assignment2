@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Brand</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+:root{
+    --yellow:#FFC72C;
+    --orange:#F58220;
+    --red:#E31937;
+    --pink:#E83E8C;
+    --white:#ffffff;
+    --dark:#1a1a1a;
+}
+
+body{
+    background:#fff;
+    overflow-x:hidden;
+    color:var(--dark);
+}
+
+/* NAVIGATION */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(12px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    z-index:1000;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--red);
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--dark);
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:var(--red);
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:
+    radial-gradient(circle at top left, var(--yellow), transparent 40%),
+    radial-gradient(circle at bottom right, var(--pink), transparent 40%),
+    linear-gradient(135deg, var(--orange), var(--red));
+    position:relative;
+    overflow:hidden;
+    padding:120px 8%;
+}
+
+.hero-content{
+    max-width:700px;
+    color:white;
+    z-index:2;
+}
+
+.hero-content h1{
+    font-size:clamp(3rem,7vw,6rem);
+    line-height:1;
+    margin-bottom:20px;
+    font-weight:800;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    margin-bottom:40px;
+    max-width:600px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:16px 34px;
+    border-radius:50px;
+    background:white;
+    color:var(--red);
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
